@@ -6,7 +6,7 @@ void setup()
   int endY=150;
   size(300,300);
   strokeWeight()=5;
-  background()=(255,255,255);
+  background()=(255);
 }
 void draw()
 {
@@ -17,6 +17,7 @@ void draw()
   line(startX,startY,endX,endY);
   startX=endX;
   startY=endY;
+  }
 }
 void mousePressed()
 {
