@@ -1,29 +1,32 @@
 void setup()
 {
-  size(300,300);
+  size(350,600);
+  fill(255,225,180);
+  strokeWeight(0);
+  background(50);
+  circle(175,100,100);
   strokeWeight(5);
-  background(0);
 }
 void draw()
 {
-  int startX = 0;
-  int startY = 150;
+  int startX = 175;
+  int startY =50;
   int endX =0;
-  int endY=150;
-  stroke((int)(Math.random()*255));
-  while(startX<=300){
-  endX=startX+(int)(Math.random()*9);
-  endY=startY+(int)(Math.random()*18-9);
+  int endY=0;
+  stroke(0,0,(int)(Math.random()*155+100));
+  while(startY<=600){
+  endX=startX+(int)(Math.random()*18-9);
+  endY=startY+(int)(Math.random()*9);
   line(startX,startY,endX,endY);
   startX=endX;
   startY=endY;
+  circle(175,100,100);
   }
 }
 
 void mousePressed()
 {
-  int startX = 0;
-  int startY = 150;
-  int endX =0;
-  int endY=150;
+background(50);
+circle(175,100,100);
 }
+
