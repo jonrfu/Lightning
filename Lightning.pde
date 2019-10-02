@@ -1,14 +1,15 @@
-void setup()
+public void setup()
 {
   size(350,600);
   fill(255,225,180);
   strokeWeight(0);
   background(50);
   circle(175,100,100);
-  strokeWeight(5);
+  
 }
-void draw()
+public void draw()
 {
+  strokeWeight((int)(Math.random()*5)+1);
   int startX = 175;
   int startY =50;
   int endX =0;
@@ -24,9 +25,8 @@ void draw()
   }
 }
 
-void mousePressed()
+public void mousePressed()
 {
 background(50);
 circle(175,100,100);
 }
-
