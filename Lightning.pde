@@ -1,4 +1,4 @@
-void setup()
+  void setup()
 {
   size(350,600);
   fill(0);
@@ -32,7 +32,7 @@ void setup()
 {
 background((int)(Math.random()*80+40));
   strokeWeight(0);  
-  ellipse(175,55,100,100);
+  ellipse(175,55,(int)(Math.random()*20)+90,100);
   ellipse(235,55,100,100);
   ellipse(115,55,100,100); 
 }
